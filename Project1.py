@@ -1,6 +1,7 @@
 #comment
-#
-#
+#William Hutt
+#Makes a new image from 9 old ones and removes the guy in them
+#Due 2/9/2017
 #opening images
 from PIL import Image
 
