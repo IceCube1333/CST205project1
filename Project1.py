@@ -43,11 +43,11 @@ for x in range(0, pictureWidth):
         for myImage in imgList:
             
             myRed, myGreen, myBlue = myImage.getpixel((x,y))
-            
+            #pushing pixels into appropriate lists
             redPixelList.append(myRed)
             greenPixelList.append(myGreen)
             bluePixelList.append(myBlue)
-            
+        #assigning variables to medianOdd for different pixel lists    
         redPixels = medianOdd(redPixelList)
         greenPixels = medianOdd(greenPixelList)   
         bluePixels = medianOdd(bluePixelList)  
@@ -55,7 +55,7 @@ for x in range(0, pictureWidth):
         redPixelList = []
         greenPixelList =[]
         bluePixelList = []
-    
+        #inputting pixels into new image
         newImage.putpixel((x,y),(redPixels,greenPixels,bluePixels))
     
 newImage.save("newImage.png", "PNG")
